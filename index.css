@@ -178,13 +178,20 @@ body {
 .info .rat span {
     display: flex;
     background: rgb(9, 100, 136);
-    margin: 0 1vh;
+    margin: 0;
     border-radius: 1.5vh;
     padding: 0 0.5vh;
+    height: 5vh;
+}
+
+.info .rat span p {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .info .rat>p {
     border-bottom: 1px solid black;
+    margin: auto 1vh;
 }
 
 .contact {
@@ -208,9 +215,9 @@ body {
 }
 
 
-/* reponsiv */
+/* reponsive */
 
-@media only screen and (max-width :870px) {
+@media only screen and (max-width :1000px) {
     .containar {
         grid-template-columns: repeat(3, auto);
         grid-gap: 5vh;
@@ -235,7 +242,7 @@ body {
     }
 }
 
-@media only screen and (max-width :670px) {
+@media only screen and (max-width :760px) {
     .containar {
         grid-template-columns: repeat(2, auto);
         grid-gap: 5vh;
@@ -260,7 +267,10 @@ body {
     }
 }
 
-@media only screen and (max-width :450px) {
+@media only screen and (max-width :500px) {
+    .menu {
+        margin: 4vh 3vh;
+    }
     .logo img {
         width: 30vh;
         height: 15vh;
@@ -284,10 +294,12 @@ body {
     }
     .info {
         margin: 1vh;
+        text-align: start;
     }
     .info .rat {
         width: 35vh;
         height: 5vh;
+        justify-content: start;
     }
     .deg,
     .exp,
@@ -304,11 +316,11 @@ body {
         margin-bottom: auto;
     }
     .contact button {
-        margin: 1vh;
-        font-size: 1.8vh;
+        /* margin: 1vh; */
+        font-size: 1.7vh;
         display: flex;
         flex-direction: row;
-        width: 20vh;
+        width: 15vh;
         height: 5vh;
     }
 }
