@@ -331,6 +331,22 @@ body {
 */
 
 @media only screen and (max-width :500px) {
+    .logo img {
+        width: 15vh;
+        height: 15vh;
+    }
+    .profilePhoto img {
+        width: 10vh;
+        height: 10vh;
+    }
+    #location {
+        width: 30vh;
+        height: 5vh;
+    }
+    .inputFull input {
+        width: 30vh;
+        height: 5vh;
+    }
     .containar {
         grid-template-columns: repeat(1, auto);
         grid-gap: 5vh;
@@ -352,24 +368,5 @@ body {
     }
     .info .rat {
         margin-top: 0.7vh;
-    }
-}
-
-@media only screen and (max-width :350px) {
-    .logo img {
-        width: 20vh;
-        height: 15vh;
-    }
-    .profilePhoto img {
-        width: 10vh;
-        height: 10vh;
-    }
-    #location {
-        width: 40vh;
-        height: 5vh;
-    }
-    .inputFull input {
-        width: 40vh;
-        height: 5vh;
     }
 }
