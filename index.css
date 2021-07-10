@@ -27,7 +27,8 @@ body {
 }
 
 .change .b1 {
-    -webkit-transform: rotate(-45deg) translate(-12px, 5px);
+    /* -webkit-transform: rotate(-45deg) translate(-12px, 5px); */
+    transform: rotate(-45deg) translate(-12px, 5px);
     /* transform: (-9px 6px); */
 }
 
@@ -36,7 +37,8 @@ body {
 }
 
 .change .b3 {
-    -webkit-transform: rotate(45deg) translate(-10px, -5px);
+    /* -webkit-transform: rotate(45deg) translate(-10px, -5px); */
+    transform: rotate(45deg) translate(-10px, -5px);
     /* transform: (-7px -8px); */
 }
 
@@ -59,6 +61,7 @@ body {
 
 .dropDown a:hover {
     background-color: rgb(195, 221, 228);
+    border-radius: 2vh;
 }
 
 .show {
@@ -267,7 +270,8 @@ body {
     }
 }
 
-@media only screen and (max-width :500px) {
+
+/* @media only screen and (max-width :500px) {
     .menu {
         margin: 4vh 3vh;
     }
@@ -316,11 +320,56 @@ body {
         margin-bottom: auto;
     }
     .contact button {
-        /* margin: 1vh; */
+        margin: 1vh;
         font-size: 1.7vh;
         display: flex;
         flex-direction: row;
         width: 15vh;
+        height: 5vh;
+    }
+}
+*/
+
+@media only screen and (max-width :500px) {
+    .containar {
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 5vh;
+    }
+    .person {
+        height: 52vh;
+    }
+    .contact button {
+        margin: 0.5vh;
+        font-size: 2vh;
+    }
+    .info .name {
+        margin: 0.5vh;
+    }
+    .deg,
+    .exp,
+    .addr {
+        margin: 0.4vh;
+    }
+    .info .rat {
+        margin-top: 0.7vh;
+    }
+}
+
+@media only screen and (max-width :350px) {
+    .logo img {
+        width: 20vh;
+        height: 15vh;
+    }
+    .profilePhoto img {
+        width: 10vh;
+        height: 10vh;
+    }
+    #location {
+        width: 40vh;
+        height: 5vh;
+    }
+    .inputFull input {
+        width: 40vh;
         height: 5vh;
     }
 }
