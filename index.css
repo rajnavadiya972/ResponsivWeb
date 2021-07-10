@@ -1,0 +1,314 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(190, 208, 224);
+}
+
+.navigation {
+    display: flex;
+    background-color: rgb(145, 177, 214);
+}
+
+.menu {
+    display: inline-block;
+    cursor: pointer;
+    margin: 3vh 4vh;
+}
+
+.b1,
+.b2,
+.b3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(9, 100, 136);
+    margin: 6px 0px;
+    transition: 0.5s;
+    border-radius: 0.7vh;
+}
+
+.change .b1 {
+    -webkit-transform: rotate(-45deg) translate(-12px, 5px);
+    /* transform: (-9px 6px); */
+}
+
+.change .b2 {
+    opacity: 0;
+}
+
+.change .b3 {
+    -webkit-transform: rotate(45deg) translate(-10px, -5px);
+    /* transform: (-7px -8px); */
+}
+
+.dropDown {
+    display: none;
+    position: absolute;
+    min-width: 20vh;
+    box-shadow: 0px 5px 15px 0px rgb(43, 40, 40);
+    margin-top: 15vh;
+    border-radius: 2vh;
+    background: rgb(125, 215, 221);
+}
+
+.dropDown a {
+    color: rgb(10, 10, 10);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDown a:hover {
+    background-color: rgb(195, 221, 228);
+}
+
+.show {
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo img {
+    margin-top: 1vh;
+}
+
+.profilePhoto {
+    margin-left: 19vh;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 3vh;
+}
+
+.profilePhoto img {
+    width: 12vh;
+    height: 12vh;
+    margin-top: 1vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.heading h1 {
+    text-align: center;
+}
+
+.searchLocation {
+    border-bottom: 2px solid rgb(87, 78, 78);
+}
+
+.locFull {
+    text-align: center;
+    display: block;
+}
+
+#location {
+    margin: 3vh 0vh 2vh 0vh;
+    width: 50vh;
+    height: 6vh;
+    border-radius: 2vh;
+}
+
+.inputFull {
+    text-align: center;
+    display: block;
+}
+
+.inputFull input {
+    margin: 2vh 0vh 4vh 0vh;
+    width: 50vh;
+    height: 5vh;
+    border-radius: 2vh;
+}
+
+
+/* containar */
+
+.containar {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 5vh;
+}
+
+.person {
+    border-radius: 2vh;
+    background-color: rgb(195, 221, 228);
+    width: 38vh;
+    height: 50.5vh;
+    box-sizing: border-box;
+    margin: 2vh;
+    box-shadow: 1vh 1vh 2vh black;
+}
+
+.person .profile {
+    text-align: center;
+}
+
+.person .profile img {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    margin-top: 0.5vh;
+}
+
+.info {
+    font-size: 2.4vh;
+    text-align: center;
+    font-weight: 500;
+}
+
+.info .name {
+    font-size: 3vh;
+    margin: 0vh;
+    font-weight: 600;
+}
+
+.deg,
+.exp,
+.addr {
+    margin: 0vh;
+}
+
+.info .rat {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5vh;
+}
+
+.info .rat span {
+    display: flex;
+    background: rgb(9, 100, 136);
+    margin: 0 1vh;
+    border-radius: 1.5vh;
+    padding: 0 0.5vh;
+}
+
+.info .rat>p {
+    border-bottom: 1px solid black;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact .available {
+    font-size: 2vh;
+    margin: 1vh;
+    color: rgb(3, 121, 3);
+}
+
+.contact button {
+    margin: 0.7vh;
+    background-color: rgb(136, 197, 214);
+    border-radius: 2vh;
+    color: blue;
+    cursor: pointer;
+    width: 30vh;
+    height: 5vh;
+}
+
+
+/* reponsiv */
+
+@media only screen and (max-width :870px) {
+    .containar {
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 5vh;
+    }
+    .person {
+        height: 52vh;
+    }
+    .contact button {
+        margin: 0.5vh;
+        font-size: 2vh;
+    }
+    .info .name {
+        margin: 0.5vh;
+    }
+    .deg,
+    .exp,
+    .addr {
+        margin: 0.4vh;
+    }
+    .info .rat {
+        margin-top: 0.7vh;
+    }
+}
+
+@media only screen and (max-width :670px) {
+    .containar {
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 5vh;
+    }
+    .person {
+        height: 52vh;
+    }
+    .contact button {
+        margin: 0.5vh;
+        font-size: 2vh;
+    }
+    .info .name {
+        margin: 0.5vh;
+    }
+    .deg,
+    .exp,
+    .addr {
+        margin: 0.4vh;
+    }
+    .info .rat {
+        margin-top: 0.7vh;
+    }
+}
+
+@media only screen and (max-width :450px) {
+    .logo img {
+        width: 30vh;
+        height: 15vh;
+    }
+    .profilePhoto img {
+        width: 10vh;
+        height: 10vh;
+    }
+    .containar {
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 2vh;
+    }
+    .person {
+        width: auto;
+        height: 20vh;
+        display: flex;
+        margin-top: 3vh;
+    }
+    .person .profile {
+        margin: auto 1vh;
+    }
+    .info {
+        margin: 1vh;
+    }
+    .info .rat {
+        width: 35vh;
+        height: 5vh;
+    }
+    .deg,
+    .exp,
+    .addr {
+        font-size: 2vh;
+    }
+    .info .rat>p {
+        border-bottom: 1px solid rgb(66, 65, 65);
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    .contact {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .contact button {
+        margin: 1vh;
+        font-size: 1.8vh;
+        display: flex;
+        flex-direction: row;
+        width: 20vh;
+        height: 5vh;
+    }
+}
